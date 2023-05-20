@@ -188,30 +188,42 @@ span {
 
 /* my blogs */
 
-.myblogs {
-    background: var(--second-bg-color);
+.myblogs .heading {
+    margin-bottom: 20px;
+  }
+.myblog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.myblogs-img {
-    text-align: center
-    ; /* Centers the image horizontally */
-    margin: 2rem 0 1rem;
+.myblog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;  /* For centering the text */
 }
 
-.myblogs-img img {
-    display: block; /*Ensures the image behaves as a block element    */
-    margin: 0 auto; /* Centers the image horizontally within its container */
-    margin-bottom: 20px; /* Optional: Adds some space between the image and the paragraph */
+.myblog-box img {
+    width: 50%;  /* Adjust as needed */
+    border-radius: 2rem;
+    /* Add more styles as needed */
 }
 
-.myblogs-layer h3 {
-    font-size: 2.2rem;
+.myblog-layer h4 {
+    font-size: 2.5rem;
+    margin: 1rem 0 1rem;
 }
 
-.myblogs-layer p {
-    font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+.myblog-layer p {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: 15px;
 }
+
+
+
+
 
 
 
@@ -480,7 +492,9 @@ span {
     padding: 10rem 3% 2rem;
 
 }
-
+.myblogs {
+    padding-bottom: 7rem;
+}
 .resources {
     padding-bottom: 7rem;
 }
@@ -558,6 +572,19 @@ span {
         grid-template-columns: repeat(2,1fr);
     }
 
+
+
+
+    .myblog-box {
+        flex-direction: column;
+    }
+
+
+
+
+
+
+
     .gallary h4 {
         margin-bottom: 3rem;
 
@@ -570,6 +597,9 @@ span {
 }
 
 @media (max-width: 617px) {
+    .myblog-box {
+        flex-direction: column;
+    }
     .resources-container {
         grid-template-columns: 1fr;
     }
@@ -587,6 +617,10 @@ span {
         width: 100%;
     }
 
+    .myblog-box img {
+        width: 90%;  /* Adjust as needed */
+    }
+
 }
 
 @media (max-width: 365px) {
@@ -594,7 +628,9 @@ span {
         width: 90vw;
 
     }
-
+    .myblogs-img img {
+        width: 90vw;
+    }
     .about-img img {
         width: 90vw;
     }
