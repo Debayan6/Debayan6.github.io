@@ -42,22 +42,6 @@ window.onscroll = () => {
  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* typed js   */
 
 // var typed = new Typed('.multiple-text', {
@@ -71,7 +55,7 @@ window.onscroll = () => {
 // });
 
 var typed = new Typed('.multiple-text', {
-  strings: ['a Student.', 'a Researcher.', 'an Astrophie'],
+  strings: ['a Learner.', 'a Physics lover.', 'a Collection Of Particles.'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
