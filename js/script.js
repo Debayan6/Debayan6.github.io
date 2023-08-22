@@ -71,7 +71,7 @@ window.onscroll = () => {
 // });
 
 var typed = new Typed('.multiple-text', {
-  strings: ['a Student.', 'a Researcher.', 'Random Combination Of Particles.'],
+  strings: ['a Student.', 'a Researcher.', 'an Astrophie'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
